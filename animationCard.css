@@ -1,0 +1,21 @@
+/* Efecto de tarjetas redondeadas, con sombra y hover */
+.card {
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra que da el efecto de 'salir' */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto de aumentar el tamaño de la tarjeta al pasar el mouse */
+.card:hover {
+    transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+}
+
+/* Asegura que las imágenes mantengan el tamaño y se adapten bien */
+.card-img-top {
+    width: 100%;  /* Ocupa todo el ancho del contenedor */
+    height: 165.22px;  /* Mantiene la altura constante */
+    object-fit: cover;  /* Ajusta la imagen sin deformarla */
+    border-top-left-radius: 15px; /* Bordes redondeados en la parte superior de la imagen */
+    border-top-right-radius: 15px; /* Bordes redondeados en la parte superior de la imagen */
+}
