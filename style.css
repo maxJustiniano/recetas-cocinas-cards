@@ -1,0 +1,89 @@
+/* ---------------------------------------------
+   BASE: Fondo y tipografía general
+--------------------------------------------- */
+body {
+    font-family: 'Quicksand', sans-serif !important;
+    background-color: #f5f5dc; /* Fondo cálido beige */
+}
+
+body.bg-light {
+    background-color: #ffffff !important; /* Alternativo: blanco cálido */
+}
+
+/* ---------------------------------------------
+   TIPOGRAFÍA: Títulos principales y branding
+--------------------------------------------- */
+h2, .navbar-brand, .card-title {
+    font-family: 'Pacifico', cursive !important;
+    color: #d9534f !important; /* Rojo cálido */
+}
+
+/* ---------------------------------------------
+   NAVBAR y HEADER
+--------------------------------------------- */
+header,
+.navbar {
+    background-color: #ffb089 !important; /* Durazno claro */
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff8b5c !important; /* Naranja cálido */
+}
+
+/* ---------------------------------------------
+   SECCIÓN: Recetas
+--------------------------------------------- */
+.recipes h2 {
+    color: #d9534f !important; /* Rojo cálido */
+}
+
+/* ---------------------------------------------
+   BOTONES GENERALES
+--------------------------------------------- */
+.card .btn,
+#dark-mode-toggle {
+    background-color: #ff8b5c !important; /* Naranja cálido */
+    color: white !important;
+    border: none !important;
+}
+
+/* Estilo exclusivo para botón de modo oscuro */
+#dark-mode-toggle {
+    background-color: #343a40 !important; /* Oscuro */
+}
+
+/* ---------------------------------------------
+   FOOTER
+--------------------------------------------- */
+footer {
+    background-color: #ffc1a1 !important; /* Durazno claro */
+    color: #3c2f2f !important; /* Marrón oscuro */
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer .btn-outline-dark {
+    color: #3c2f2f !important;
+    border-color: #3c2f2f !important;
+}
+
+footer .list-unstyled a {
+    margin: 0 10px;
+}
+
+footer .btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+}

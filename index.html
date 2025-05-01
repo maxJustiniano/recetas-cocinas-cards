@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recetas de cocina</title>
-    <!-- Link a Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="animationCard.css">
-    <link rel="stylesheet" href="darkMode.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <!-- Google Fonts: Pacifico para títulos, Quicksand para texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">         <!-- Personalización base general -->
+    <link rel="stylesheet" href="animationCard.css"> <!-- Animaciones para las cards -->
+    <link rel="stylesheet" href="darkMode.css">      <!-- Estilos para el modo oscuro -->
 </head>
-<body>
+<body class="bg-light">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" onclick="window.location.href = window.location.href;">Recetas de la Nona</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,13 +30,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="window.location.href = window.location.href;">Inicio</a>
+                            <a class="nav-link" href="#" onclick="window.location.href = window.location.href;">
+                                <i class="bi bi-house-fill"></i> Inicio
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#recetas">Recetas</a>
+                            <a class="nav-link" href="#recetas">
+                                <i class="bi bi-book-half"></i> Recetas
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contacto</a>
+                            <a class="nav-link" href="#contact">
+                                <i class="bi bi-envelope-fill"></i> Contacto
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -45,7 +61,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Pizza Casera</h5>
                                 <p class="card-text">Deliciosa pizza con masa casera y tus toppings favoritos.</p>
-                                <button class="btn btn-primary">Ver Receta</button>
+                                <button class="btn">Ver Receta</button>
                             </div>
                         </div>
                     </div>
@@ -55,7 +71,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Tacos</h5>
                                 <p class="card-text">Deliciosos tacos con carne tierna, verduras frescas y salsa casera.</p>
-                                <button class="btn btn-primary">Ver Receta</button>
+                                <button class="btn">Ver Receta</button>
                             </div>
                         </div>
                     </div>
@@ -65,33 +81,34 @@
                             <div class="card-body">
                                 <h5 class="card-title">Pastel de Papas</h5>
                                 <p class="card-text">Clásico pastel de papas con carne picada y queso gratinado.</p>
-                                <button class="btn btn-primary">Ver Receta</button>
+                                <button class="btn">Ver Receta</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <button id="dark-mode-toggle" class="btn btn-dark">Activar Modo Oscuro</button>
+        <div class="text-center my-4">
+            <button id="dark-mode-toggle" class="btn btn-dark">Activar Modo Oscuro</button>
+        </div>
     </main>
 
-    <footer id="contact" class="bg-light py-4">
+    <footer id="contact" class="py-4">
         <div class="container text-center">
             <p>Seguinos en nuestras redes sociales:</p>
             <nav>
                 <ul class="list-unstyled d-flex justify-content-center">
-                    <li><a href="#" class="btn btn-outline-primary mx-2">Facebook</a></li>
-                    <li><a href="#" class="btn btn-outline-primary mx-2">Instagram</a></li>
-                    <li><a href="#" class="btn btn-outline-primary mx-2">Twitter</a></li>
+                    <li><a href="#" class="btn btn-outline-dark mx-2">Facebook</a></li>
+                    <li><a href="#" class="btn btn-outline-dark mx-2">Instagram</a></li>
+                    <li><a href="#" class="btn btn-outline-dark mx-2">Twitter</a></li>
                 </ul>
             </nav>
             <p class="copyright mt-4">© 2025 Recetas de la Nona</p>
         </div>
     </footer>
 
-    <!-- JavaScript de Bootstrap -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="darkMode.js"></script>
 </body>
 </html>
