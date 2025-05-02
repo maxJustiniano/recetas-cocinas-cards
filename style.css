@@ -1,23 +1,22 @@
 /* ---------------------------------------------
    BASE: Fondo y tipografía general
 --------------------------------------------- */
-body {
-    font-family: 'Quicksand', sans-serif !important;
-    background-color: #f5f5dc; /* Fondo cálido beige */
-}
-
 body.bg-light {
-    background-color: #ffffff !important; /* Alternativo: blanco cálido */
+    background-color: #ffffff; /* Alternativo: blanco cálido */
 }
 
 /* ---------------------------------------------
    TIPOGRAFÍA: Títulos principales y branding
 --------------------------------------------- */
-h2, .navbar-brand, .card-title {
+h2, .card-title {
     font-family: 'Pacifico', cursive !important;
-    color: #d9534f !important; /* Rojo cálido */
+    color: #d9534f ; /* Rojo cálido */
 }
 
+ .navbar-brand{
+    font-family: 'Pacifico', cursive !important;
+    color: #ffffff ; /* Rojo cálido */   
+}
 /* ---------------------------------------------
    NAVBAR y HEADER
 --------------------------------------------- */
