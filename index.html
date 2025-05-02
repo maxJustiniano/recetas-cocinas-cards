@@ -1,114 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recetas de cocina</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recetas de cocina</title>
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 
-    <!-- Google Fonts: Pacifico para títulos, Quicksand para texto -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="style.css">         <!-- Personalización base general -->
-    <link rel="stylesheet" href="animationCard.css"> <!-- Animaciones para las cards -->
-    <link rel="stylesheet" href="darkMode.css">      <!-- Estilos para el modo oscuro -->
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animationCard.css">
+  <link rel="stylesheet" href="darkMode.css">
 </head>
+
 <body class="bg-light">
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" onclick="window.location.href = window.location.href;">Recetas de la Nona</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="window.location.href = window.location.href;">
-                                <i class="bi bi-house-fill"></i> Inicio
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#recetas">
-                                <i class="bi bi-book-half"></i> Recetas
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">
-                                <i class="bi bi-envelope-fill"></i> Contacto
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <section class="recipes" id="recetas">
-            <h2 class="text-center my-4">Nuestras Recetas</h2>
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./media/pizza.png" class="card-img-top" alt="Pizza Casera">
-                            <div class="card-body">
-                                <h5 class="card-title">Pizza Casera</h5>
-                                <p class="card-text">Deliciosa pizza con masa casera y tus toppings favoritos.</p>
-                                <button class="btn">Ver Receta</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./media/tacos.png" class="card-img-top" alt="Tacos">
-                            <div class="card-body">
-                                <h5 class="card-title">Tacos</h5>
-                                <p class="card-text">Deliciosos tacos con carne tierna, verduras frescas y salsa casera.</p>
-                                <button class="btn">Ver Receta</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./media/pastelPapas.png" class="card-img-top" alt="Pastel de Papas">
-                            <div class="card-body">
-                                <h5 class="card-title">Pastel de Papas</h5>
-                                <p class="card-text">Clásico pastel de papas con carne picada y queso gratinado.</p>
-                                <button class="btn">Ver Receta</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="text-center my-4">
-            <button id="dark-mode-toggle" class="btn btn-dark">Activar Modo Oscuro</button>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" onclick="window.location.href = window.location.href;">Recetas de la Nona</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="window.location.href = window.location.href;">
+                <i class="bi bi-house-fill"></i> Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recetas">
+                <i class="bi bi-book-half"></i> Recetas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <i class="bi bi-envelope-fill"></i> Contacto
+              </a>
+            </li>
+          </ul>
         </div>
-    </main>
+      </div>
+    </nav>
+  </header>
 
-    <footer id="contact" class="py-4">
-        <div class="container text-center">
-            <p>Seguinos en nuestras redes sociales:</p>
-            <nav>
-                <ul class="list-unstyled d-flex justify-content-center">
-                    <li><a href="#" class="btn btn-outline-dark mx-2">Facebook</a></li>
-                    <li><a href="#" class="btn btn-outline-dark mx-2">Instagram</a></li>
-                    <li><a href="#" class="btn btn-outline-dark mx-2">Twitter</a></li>
-                </ul>
-            </nav>
-            <p class="copyright mt-4">© 2025 Recetas de la Nona</p>
+  <!-- Main Content -->
+  <main class="mt-5 mb-5">
+    <!-- Recetas -->
+    <section class="recipes" id="recetas">
+      <h2 class="text-center my-4">Nuestras Recetas</h2>
+      <div class="container">
+        <div class="row justify-content-center g-4">
+
+          <!-- Receta 1 -->
+          <div class="col-auto">
+            <div class="card custom-card">
+              <img src="./media/pizza.png" class="card-img-top" alt="Pizza Casera">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Casera</h5>
+                <p class="card-text">Deliciosa pizza con masa casera y tus toppings favoritos.</p>
+                <button class="btn btn-primary">Ver Receta</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Receta 2 -->
+          <div class="col-auto">
+            <div class="card custom-card">
+              <img src="./media/tacos.png" class="card-img-top" alt="Tacos">
+              <div class="card-body">
+                <h5 class="card-title">Tacos</h5>
+                <p class="card-text">Deliciosos tacos con carne tierna, verduras frescas y salsa casera.</p>
+                <button class="btn btn-primary">Ver Receta</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Receta 3 -->
+          <div class="col-auto">
+            <div class="card custom-card">
+              <img src="./media/pastelPapas.png" class="card-img-top" alt="Pastel de Papas">
+              <div class="card-body">
+                <h5 class="card-title">Pastel de Papas</h5>
+                <p class="card-text">Clásico pastel de papas con carne picada y queso gratinado.</p>
+                <button class="btn btn-primary">Ver Receta</button>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="darkMode.js"></script>
+    <!-- Botón Modo Oscuro -->
+    <div class="text-center my-4">
+      <button id="dark-mode-toggle" class="btn btn-dark">☀️ Modo Claro</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="py-4">
+    <div class="container text-center">
+      <p>Seguinos en nuestras redes sociales:</p>
+      <nav>
+        <ul class="list-unstyled d-flex justify-content-center">
+          <li><a href="#" class="btn mx-2"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" class="btn mx-2"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" class="btn mx-2"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </nav>
+      <p class="copyright mt-4">© 2025 Recetas de la Nona</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="darkMode.js"></script>
 </body>
 </html>

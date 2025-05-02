@@ -23,7 +23,7 @@ h2, .navbar-brand, .card-title {
 --------------------------------------------- */
 header,
 .navbar {
-    background-color: #ffb089 !important; /* Durazno claro */
+    background: linear-gradient(to right, #ff8c66, #ff6347) !important;
 }
 
 .navbar-nav .nav-link {
@@ -51,7 +51,7 @@ header,
 --------------------------------------------- */
 .card .btn,
 #dark-mode-toggle {
-    background-color: #ff8b5c !important; /* Naranja cálido */
+    background: linear-gradient(to right, #ff6347, #ff8c66) !important; /* Naranja cálido */
     color: white !important;
     border: none !important;
 }
@@ -65,7 +65,7 @@ header,
    FOOTER
 --------------------------------------------- */
 footer {
-    background-color: #ffc1a1 !important; /* Durazno claro */
+    background-color: #ff8b5c !important; /* Durazno claro */
     color: #3c2f2f !important; /* Marrón oscuro */
 }
 
@@ -86,4 +86,17 @@ footer .list-unstyled a {
 footer .btn {
     font-size: 1rem;
     padding: 10px 15px;
+}
+
+/* ---------------------------------------------
+   TARJETAS: Estilos específicos
+--------------------------------------------- */
+.card.custom-card {
+    width: 300px !important;
+    height: 393px !important;
+}
+
+.card.custom-card .card-img-top {
+    height: 160px !important;
+    object-fit: cover !important;
 }

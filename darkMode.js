@@ -9,8 +9,8 @@ darkModeButton.addEventListener('click', () => {
     cards.forEach(card => card.classList.toggle('card-dark-mode'));
 
     if (body.classList.contains('dark-mode')) {
-        darkModeButton.textContent = 'Desactivar Modo Oscuro';
+        darkModeButton.textContent = '🌑Modo Oscuro';
     } else {
-        darkModeButton.textContent = 'Activar Modo Oscuro';
+        darkModeButton.textContent = '☀️Modo Claro';
     }
 });

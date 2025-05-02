@@ -36,3 +36,7 @@ button {
 button:hover {
     background-color: #555;
 }
+
+#dark-mode-toggle{
+    background: linear-gradient(to right, #8d8d8d, #353535) !important;
+}
