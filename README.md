@@ -1,2 +1,2 @@
-# recetas-cocinas-cats
-Cats con informacion e imagenes de recetas de cosina
+# recetas-cocinas-cards
+Cards con informacion e imagenes de recetas de cosina
